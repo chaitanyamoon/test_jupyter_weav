@@ -20,17 +20,17 @@ interface APODResponse {
  * Initialization data for the jupyterlab_apod extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-  id: 'jupyterlab-apod',
+  id: 'test_jupyter_weav',
   autoStart: true,
   requires: [ICommandPalette],
   activate: async (app: JupyterFrontEnd, palette: ICommandPalette) => {
-    console.log('JupyterLab extension jupyterlab_apod is activated@@@@@@@@@@@@@!');
+    console.log('JupyterLab extension jupyterlab_apod is activated!!!!!!!!!!!!!111111111');
     console.log('ICommandPalette:', palette);
   
     // Create a blank content widget inside of a MainAreaWidget
     const content = new Widget();
     const widget = new MainAreaWidget({ content });
-    widget.id = 'apod-jupyterlab';
+    widget.id = 'test_jupyter_weav';
     widget.title.label = 'WEAV AI';
     widget.title.closable = true;
 
